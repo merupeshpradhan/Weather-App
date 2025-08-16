@@ -1,9 +1,11 @@
-import React from 'react'
+import Weather from "./components/weather-app/weather";
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      <Weather />
+    </div>
+  );
 }
 
-export default App
+export default App;
