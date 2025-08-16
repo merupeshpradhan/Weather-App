@@ -1,14 +1,14 @@
-export default function Search(search, setSearch) {
+export default function Search({ search, setSearch, handleSearch }) {
   return (
-    <div>
+    <div className="search-engine">
       <input
         type="text"
-        className="city-search"
         placeholder="Enter City Name"
         name="text"
         value={search}
         onChange={(event) => setSearch(event.target.value)}
       />
+      <button onClick={handleSearch}>Search</button>
     </div>
   );
 }
