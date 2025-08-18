@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 25px;
   margin-top: 10px;
 }
 
@@ -60,24 +60,6 @@ body {
   font-size: 20px;
 }
 
-.weather-info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.weather-info .wind {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.weather-info .humidity {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .city-name {
   margin-bottom: 10px;
 }
@@ -88,11 +70,33 @@ body {
   color: #000;
 }
 .date{
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
 }
 .temp{
   font-size: 64px;
   color: #000;
   font-weight: bold;
+}
+
+.description{
+  color: #000000;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.weather-info {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ margin-top: 20px;
+ padding: 0px 20px;
+ font-weight: bold;
+ text-align: center;
+}
+
+.column{
+  display: flex;
+  align-items: center;
+  line-height: 16px;
 }

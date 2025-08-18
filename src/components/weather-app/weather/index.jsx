@@ -70,13 +70,17 @@ export default function Weather() {
                 : ""}
             </p>
             <div className="weather-info">
-              <div className="wind">
-                <div>{weatherData?.wind?.speed}</div>
-                <p>Wind Speed</p>
+              <div className="column">
+                <div>
+                  <p>{weatherData?.wind?.speed}</p>
+                  <p>Wind Speed</p>
+                </div>
               </div>
-              <div className="humidity">
-                <div className="humidity">{weatherData?.main?.humidity}%</div>
-                <p>Humidity</p>
+              <div className="column">
+                <div>
+                  <p className="humidity">{weatherData?.main?.humidity}%</p>
+                  <p>Humidity</p>
+                </div>
               </div>
             </div>
           </div>
